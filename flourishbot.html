@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flourishbot — One-Pager</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#f8f9fa;color:#1a1a1a;line-height:1.6;padding:20px;max-width:800px;margin:0 auto}
+.header{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:32px 24px;border-radius:16px;margin-bottom:24px;text-align:center}
+.header h1{font-size:1.8rem;margin-bottom:8px}
+.header p{font-size:1rem;opacity:.9}
+.section{background:#fff;padding:24px;border-radius:12px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.section h2{font-size:1.2rem;margin-bottom:12px;color:#667eea}
+.section h3{font-size:1rem;margin:16px 0 8px;color:#444}
+.section ul{list-style:none;padding-left:0}
+.section ul li{padding:8px 0;border-bottom:1px solid #f0f0f0;display:flex;align-items:flex-start;gap:10px}
+.section ul li:last-child{border-bottom:none}
+.checkbox{width:20px;height:20px;border:2px solid #667eea;border-radius:4px;flex-shrink:0;margin-top:2px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.9rem}
+th,td{padding:10px;text-align:left;border-bottom:1px solid #eee}
+th{background:#f8f9fa;font-weight:600;color:#555}
+.callout{background:#eef2ff;padding:12px 16px;border-radius:8px;font-size:.9rem;color:#444;margin:12px 0}
+.checklist li{display:flex;gap:12px;align-items:center;padding:10px 0}
+.number{width:26px;height:26px;background:#667eea;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;flex-shrink:0}
+.footer{text-align:center;color:#888;font-size:.85rem;margin-top:24px;padding:16px}
+.badge{display:inline-block;background:#667eea;color:#fff;padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:600;margin-bottom:8px}
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="badge">INTERNAL — PAUL'S MEETING</div>
+<h1>Flourishbot</h1>
+<p>A dedicated AI sales assistant built for Flourish</p>
+</div>
+
+<div class="section">
+<h2>What is Flourishbot?</h2>
+<p>Flourishbot is a private AI agent that lives in your pocket (Telegram) and connects directly to your Microsoft email, calendar, and the Flourish CRM. It handles the admin work so you can focus on selling.</p>
+<div class="callout">
+<strong>Built by:</strong> Michael (B2BEE) &bull; <strong>Managed by:</strong> Michael &bull; <strong>Controlled by:</strong> You
+</div>
+</div>
+
+<div class="section">
+<h2>Week 1 — What It Will Do</h2>
+<ul>
+<li><span class="checkbox"></span> <strong>Morning Brief</strong> — Every day at 08:00: meetings, unread emails, overdue tasks.</li>
+<li><span class="checkbox"></span> <strong>Email Triage</strong> — Reads your Microsoft inbox, flags urgent items, drafts replies in your voice.</li>
+<li><span class="checkbox"></span> <strong>CRM Sync</strong> — Updates lead stages, logs calls, reminds you to follow up.</li>
+<li><span class="checkbox"></span> <strong>Meeting Prep</strong> — Before every call: context + suggested talking points.</li>
+<li><span class="checkbox"></span> <strong>Quick Queries</strong> — "Who haven't I spoken to in 14 days?" / "What's my pipeline value?"</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Month 1 — Full Autonomy</h2>
+<ul>
+<li><span class="checkbox"></span> <strong>Send on Your Behalf</strong> — Standard emails sent without asking after training.</li>
+<li><span class="checkbox"></span> <strong>Calendar Management</strong> — Propose slots, send invites, reschedule conflicts.</li>
+<li><span class="checkbox"></span> <strong>Voice Messages</strong> — You send voice notes, it transcribes and acts.</li>
+<li><span class="checkbox"></span> <strong>Prospect Research</strong> — Before meetings, pull company info and suggest angles.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>What You Need to Bring</h2>
+
+<h3>1. Microsoft Email Access</h3>
+<table>
+<tr><th>Question</th><th>Answer</th></tr>
+<tr><td>Email address</td><td>_________________________</td></tr>
+<tr><td>Do you use 2FA / Microsoft Authenticator?</td><td>☑ Yes / ☑ No</td></tr>
+<tr><td>If yes — app-based or SMS?</td><td>☑ App / ☑ SMS</td></tr>
+</table>
+<div class="callout">Flourishbot connects via Microsoft Graph API. If you have 2FA, we'll generate an App Password or set up a dedicated authentication flow.</div>
+
+<h3>2. Telegram</h3>
+<table>
+<tr><th>Question</th><th>Answer</th></tr>
+<tr><td>Do you have Telegram?</td><td>☑ Yes / ☑ No</td></tr>
+<tr><td>Your Telegram username</td><td>_________________________</td></tr>
+</table>
+
+<h3>3. CRM Access</h3>
+<table>
+<tr><th>Question</th><th>Answer</th></tr>
+<tr><td>Can it read your pipeline?</td><td>☑ Yes / ☑ No</td></tr>
+<tr><td>Can it edit lead stages / add notes?</td><td>☑ Yes / ☑ Read-only</td></tr>
+<tr><td>Can it create tasks / reminders?</td><td>☑ Yes / ☑ No</td></tr>
+</table>
+
+<h3>4. Your Preferences</h3>
+<table>
+<tr><th>Question</th><th>Answer</th></tr>
+<tr><td>How formal should email drafts be?</td><td>☑ Casual / ☑ Professional / ☑ Very formal</td></tr>
+<tr><td>Can it send emails without asking?</td><td>☑ Yes (after training) / ☑ Ask every time</td></tr>
+<tr><td>If you ignore it 4+ hours, escalate to Michael?</td><td>☑ Yes / ☑ No</td></tr>
+</table>
+</div>
+
+<div class="section">
+<h2>Setup Checklist — Today's Meeting</h2>
+<ul class="checklist">
+<li><span class="number">1</span> Confirm email and auth type</li>
+<li><span class="number">2</span> Install Telegram and message Michael your username</li>
+<li><span class="number">3</span> Grant CRM permissions — verify DB access level</li>
+<li><span class="number">4</span> Tone calibration — review 2-3 sample email drafts</li>
+<li><span class="number">5</span> Escalation rules confirmed</li>
+<li><span class="number">6</span> Connect Microsoft — OAuth / App Password setup</li>
+<li><span class="number">7</span> First test — Flourishbot sends a test message</li>
+<li><span class="number">8</span> Q&A and next steps</li>
+</ul>
+<div class="callout"><strong>Duration:</strong> 30 minutes &bull; <strong>Go-live target:</strong> Today &bull; <strong>Full autonomy:</strong> 1-2 weeks</div>
+</div>
+
+<div class="section">
+<h2>Security & Privacy</h2>
+<ul>
+<li><span class="checkbox"></span> Your credentials are stored encrypted in a vault only Michael controls.</li>
+<li><span class="checkbox"></span> Strictly Flourish-only. No knowledge of other businesses or clients.</li>
+<li><span class="checkbox"></span> You retain veto power — every action can require your thumbs-up.</li>
+<li><span class="checkbox"></span> No training on your data. Standard LLMs only.</li>
+</ul>
+</div>
+
+<div class="footer">
+This is designed to make your life easier, not more complicated. If anything feels wrong, we'll adjust before it goes live.
+</div>
+
+</body>
+</html>
